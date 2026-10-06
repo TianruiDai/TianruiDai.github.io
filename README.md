@@ -23,3 +23,6 @@ Open [http://localhost:3000](http://localhost:3000).
 - Edit [`data/profile.ts`](data/profile.ts) for name, role, email, photo path, and bio.
 - Edit [`data/publications.ts`](data/publications.ts) for the publication list.
 - Replace `public/photo.jpg` with your headshot (path set in `profile.ts` as `/photo.jpg`).
+
+## My homepage
+Right now, you can visit my homepage at http://82.157.31.198
