@@ -1,0 +1,11 @@
+.wireframe-ball {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.wireframe-ball:active {
+  cursor: grabbing;
+}

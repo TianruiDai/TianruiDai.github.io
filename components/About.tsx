@@ -1,4 +1,16 @@
+import FlipCard from "@/components/FlipCard";
 import { profile } from "@/data/profile";
+
+function BioFace({ paragraphs, hint }: { paragraphs: string[]; hint: string }) {
+  return (
+    <div className="about-bio-face">
+      {paragraphs.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
+      <p className="about-bio-hint">{hint}</p>
+    </div>
+  );
+}
 
 export function About() {
   return (
@@ -17,11 +29,17 @@ export function About() {
           </p>
         </div>
       </div>
-      <div className="about-bio">
-        {profile.bio.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
+      <FlipCard
+        className="about-bio-card"
+        front={<BioFace paragraphs={profile.bio} hint="点击翻到 English" />}
+        back={<BioFace paragraphs={profile.bioEn} hint="Click for 中文" />}
+        width={720}
+        height={400}
+        draggable={false}
+        background="#18181b"
+        color="#fafafa"
+        ariaLabel="Biography, click to switch language"
+      />
       <h2 className="section-title">Education</h2>
       <ul className="profile-list">
         {profile.education.map((item) => (

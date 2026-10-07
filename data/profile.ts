@@ -18,6 +18,7 @@ export type Profile = {
   email: string;
   photo: string;
   bio: string[];
+  bioEn: string[];
   education: Education[];
   career: Career[];
   copyrightYear: number;
@@ -33,10 +34,15 @@ export const profile: Profile = {
     "我目前在寻找多模态、AI4Science、世界模型和高性能计算方面的岗位。欢迎联系！",
     "我当前的研究方向为反问题成像、图谱理论、高性能计算、基于深度学习的医学影像处理和基于数学物理先验的图像视频生成模型。同时，我对多模态、世界模型的研究非常感兴趣。",
   ],
+  bioEn: [
+    "I am Tianrui Dai (born in 1998), from Hefei, Anhui, China.",
+    "I am looking for jobs in AIGC, AI4Science, world models, and high-performance computing. Feel free to get in touch.",
+    "My research covers inverse problems, imaging, graph theory, high-performance computing, deep-learning-based medical image processing, and generative models for images and video grounded in mathematical and physical priors.",
+  ],
   career: [
     {
       period: "2025–至今",
-      position: "助理研究员",
+      position: "博士后研究员",
       organization: "中山大学数学学院（珠海）",
       note: "合作导师：Davide Bianchi 副教授。研究涵盖反问题成像理论、建模与数值方法，以及基于深度学习的医学影像处理。",
     },
@@ -48,28 +54,28 @@ export const profile: Profile = {
     },
     {
       period: "2024–2025",
-      position: "博士后研究员",
-      organization: "佛罗伦萨大学",
-      note: "合作导师：Elisa Francini 副教授、Sergio Vessella 教授。研究包括分段 Carleman 估计、含多边形夹杂物的 EIT 成像理论及 Lipschitz 稳定性分析。",
+      position: "Postdoctoral Researcher",
+      organization: "Università di Firenze",
+      note: "Collaborators: Prof Elisa Francini and Prof Sergio Vessella. Research includes piecewise Carleman estimates, EIT imaging theory with polygonal inclusions, and Lipschitz stability analysis.",
     },
   ],
   education: [
     {
       period: "2021–2024",
       degree: "应用数学博士",
-      school: "巴黎西岱大学 · Jacques-Louis Lions 实验室（LJLL）",
-      note: "导师：Yves Capdeboscq 教授。论文题为《参数重构问题与混合层析成像》。",
+      school: "Université Paris Cité · Laboratoire Jacques-Louis Lions （LJLL）",
+      note: "Advisor: Prof Yves Capdeboscq 。",
     },
     {
       period: "2019–2020",
-      degree: "应用数学 M2",
-      school: "巴黎第九大学（Paris Dauphine–PSL）",
-      note: "导师：Yves Capdeboscq 教授。巴黎数学会 PGSM 硕士奖学金资助。",
+      degree: "应用数学硕士",
+      school: "Université Paris Dauphine PSL",
+      note: "Advisor: Prof Yves Capdeboscq 。",
     },
     {
       period: "2015–2019",
       degree: "数学与应用数学学士",
-      school: "中国科学技术大学 · 少年班学院创新试点班",
+      school: "中国科学技术大学 · 少年班学院",
       note: "导师：麻希南教授。",
     },
   ],

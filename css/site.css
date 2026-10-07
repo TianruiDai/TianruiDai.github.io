@@ -1,9 +1,10 @@
 .page-background {
   position: fixed;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
+  top: 4.75rem;
+  right: 1.25rem;
+  z-index: 20;
+  width: min(16rem, 42vw);
+  height: min(16rem, 42vw);
   pointer-events: auto;
 }
 
@@ -18,7 +19,8 @@
 }
 
 .site-content a,
-.site-content button {
+.site-content button,
+.site-content .flip-card {
   pointer-events: auto;
 }
 
@@ -121,18 +123,31 @@
   text-decoration: underline;
 }
 
-.about-bio {
+.about-bio-card.flip-card {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.about-bio-face {
+  height: 100%;
+  padding: 1.25rem 1.35rem 1rem;
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text-secondary);
+  overflow: auto;
 }
 
-.about-bio p {
-  margin: 0 0 1rem;
+.about-bio-face p {
+  margin: 0 0 0.85rem;
 }
 
-.about-bio p:last-child {
-  margin-bottom: 0;
+.about-bio-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--text-subtle);
 }
 
 .profile-list {
