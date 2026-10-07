@@ -3,7 +3,6 @@ import { Geist } from "next/font/google";
 import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { PageBackground } from "@/components/PageBackground";
 import { profile } from "@/data/profile";
 import "./globals.css";
 
@@ -29,7 +28,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Script id="theme" strategy="beforeInteractive">
           {`document.documentElement.dataset.theme=localStorage.getItem("theme")||"night"`}
         </Script>
-        <PageBackground />
         <div className="site-content">
           <Header />
           {children}

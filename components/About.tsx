@@ -1,4 +1,5 @@
 import FlipCard from "@/components/FlipCard";
+import WireframeBall from "@/components/WireframeBall";
 import { profile } from "@/data/profile";
 
 function BioFace({ paragraphs, hint }: { paragraphs: string[]; hint: string }) {
@@ -27,6 +28,9 @@ export function About() {
           <p className="about-email">
             <a href={`mailto:${profile.email}`}>Email</a>
           </p>
+        </div>
+        <div className="about-stack">
+          <WireframeBall />
         </div>
       </div>
       <FlipCard

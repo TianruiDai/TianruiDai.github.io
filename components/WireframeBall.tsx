@@ -23,6 +23,7 @@ const labels: Label[] = [
   { name: "高性能计算", color: "#f9a8d4", day: "#be185d", size: 13 },
   { name: "图谱理论", color: "#bef264", day: "#4d7c0f", size: 17 },
   { name: "全栈开发", color: "#5eead4", day: "#0f766e", size: 14 },
+  { name: "PDE", color: "#e879f9", day: "#a21caf", size: 20 },
 ];
 
 function mesh() {
