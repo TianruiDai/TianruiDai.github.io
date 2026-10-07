@@ -7,6 +7,7 @@ export type Publication = {
   id: string;
   title: string;
   venue: string;
+  poster: string;
   thumbnail: string;
   advisors: string[];
   links: PublicationLink[];
@@ -20,6 +21,7 @@ export const publications: Publication[] = [
     title:
       "Lipschitz Stability in the Simultaneous Determination of Polygonal Inclusions and Constant Conductivities",
     venue: "arXiv preprint, 2026",
+    poster: "/Lipschitz.png",
     thumbnail: "",
     advisors: [],
     links: [
@@ -39,6 +41,7 @@ export const publications: Publication[] = [
     title:
       "Doubling inequality and strong unique continuation for an elliptic transmission problem",
     venue: "Inverse Problems, 2025",
+    poster: "/Doubling.png",
     thumbnail: "",
     advisors: [],
     links: [
@@ -62,6 +65,7 @@ export const publications: Publication[] = [
     id: "parameter-reconstruction-hybrid-tomography-2024",
     title: "Parameter reconstruction problems and hybrid tomography",
     venue: "PhD Thesis, Université Paris Cité, 2024",
+    poster: "/parameter.png",
     thumbnail: "",
     advisors: ["Prof. Yves Capdeboscq"],
     links: [
@@ -82,6 +86,7 @@ export const publications: Publication[] = [
     title:
       "Positive Jacobian constraints for elliptic boundary value problems with piecewise-regular coefficients arising from multi-wave inverse problems",
     venue: "Inverse Problems, 2023",
+    poster: "/jacobian.png",
     thumbnail: "",
     advisors: [],
     links: [

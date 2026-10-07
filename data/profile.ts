@@ -48,8 +48,8 @@ export const profile: Profile = {
     },
     {
       period: "2026–至今",
-      position: "高性能数学库算子专家顾问",
-      organization: "大湾区国家技术创新中心",
+      position: "高性能数学库兼职专家顾问",
+      organization: "粤港澳大湾区国家技术创新中心",
       note: "面向工业仿真的大规模稀疏矩阵求解：基于人工智能的优化方案落地与算子开发。",
     },
     {

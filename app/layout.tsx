@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { PageBackground } from "@/components/PageBackground";
 import { profile } from "@/data/profile";
 import "./globals.css";
@@ -16,10 +19,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} antialiased`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} antialiased`}
+      data-theme="night"
+      suppressHydrationWarning
+    >
       <body className="site-body">
+        <Script id="theme" strategy="beforeInteractive">
+          {`document.documentElement.dataset.theme=localStorage.getItem("theme")||"night"`}
+        </Script>
         <PageBackground />
-        <div className="site-content">{children}</div>
+        <div className="site-content">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

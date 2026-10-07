@@ -36,11 +36,11 @@ export function About() {
         width={720}
         height={400}
         draggable={false}
-        background="#18181b"
-        color="#fafafa"
+        background="var(--card-bg)"
+        color="var(--foreground)"
         ariaLabel="Biography, click to switch language"
       />
-      <h2 className="section-title">Education</h2>
+      <h2 className="section-title">教育经历</h2>
       <ul className="profile-list">
         {profile.education.map((item) => (
           <li key={`${item.period}-${item.school}`} className="profile-list-item">
@@ -52,7 +52,7 @@ export function About() {
           </li>
         ))}
       </ul>
-      <h2 className="section-title">Career</h2>
+      <h2 className="section-title">工作经历</h2>
       <ul className="profile-list">
         {profile.career.map((item) => (
           <li

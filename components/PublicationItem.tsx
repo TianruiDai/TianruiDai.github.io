@@ -20,6 +20,13 @@ export function PublicationItem({ publication }: { publication: Publication }) {
       ) : null}
       <div>
         <h3 className="publication-title">{publication.title}</h3>
+        {publication.poster.length > 0 ? (
+          <img
+            className="publication-poster"
+            src={publication.poster}
+            alt=""
+          />
+        ) : null}
         <p className="publication-venue">{publication.venue}</p>
         {publication.highlight.length > 0 ? (
           <p className="publication-highlight">{publication.highlight}</p>
